@@ -69,5 +69,10 @@ module TicTacToe
   	  end
   	end
 
+  	TestCell = Struct.new(:value)
+  	let(:x_cell) { TestsCell.new("X") }
+  	let(:y_cell) { TestsCell.new("Y") }
+  	let(:empty) { TestsCell.new }
+
   end
 end
