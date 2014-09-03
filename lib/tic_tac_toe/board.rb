@@ -34,6 +34,7 @@ module TicTacToe
 
   	def winning_position_values(winning_position)
   	  winning_position.map { |cell| cell.value }
+  	end
 
   	private
 
