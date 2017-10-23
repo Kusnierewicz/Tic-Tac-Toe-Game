@@ -6,7 +6,7 @@ require 'tic_tac_toe/version'
 Gem::Specification.new do |spec|
   spec.name          = "tic_tac_toe"
   spec.version       = TicTacToe::VERSION
-  spec.authors       = ["lukasz.urzedowski"]
+  spec.authors       = ["Kusnierewicz"]
   spec.email         = ["kusnierewicz@gmail"]
   spec.description   = %q{TicTacToe Game - Odin Project Assignment}
   spec.summary       = %q{TicTacToe Game - Odin Project Assignment}

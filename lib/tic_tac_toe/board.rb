@@ -2,10 +2,9 @@ module TicTacToe
   class Board
   	attr_reader :grid
 
-  	def initialize(input = {})
-  	  @grid = input.fetch(:grid, default_grid)
-  	end
-
+    def initialize
+      @grid = default_grid
+    end
 
 
     def print_board
@@ -13,12 +12,12 @@ module TicTacToe
         print '   '
         for i in 0..2
           if x[i].value.empty? && i < 2
-            print "| |"
-          elsif x[i].value.empty? && i = 2
-            puts "| |"
+            print '| |'
+          elsif x[i].value.empty? && i == 2
+            puts '| |'
           elsif !x[i].value.empty? && i < 2
             print "|#{x[i].value}|"
-          elsif !x[i].value.empty? && i = 2
+          elsif !x[i].value.empty? && i == 2
             puts "|#{x[i].value}|"
           end
         end
@@ -30,7 +29,7 @@ module TicTacToe
   	end
 
   	def set_cell(x, y, value)
-      if get_cell(x, y).value == ""
+      if get_cell(x, y).value == ''
   	    get_cell(x, y).value = value
       else
         false
@@ -38,8 +37,8 @@ module TicTacToe
   	end
 
   	def game_over
-  	  return "winner" if winner?
-  	  return "draw" if draw?
+  	  return :winner if winner?
+  	  return :draw if draw?
   	  false
   	end
 
@@ -62,6 +61,7 @@ module TicTacToe
   	private
 
 	  def winning_positions
+      #"+" are adding all arrays together in final output
   		grid + # rows
   		grid.transpose + # columns
   		diagonals # two diagonals
