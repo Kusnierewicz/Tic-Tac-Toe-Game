@@ -1,10 +1,10 @@
-# The Odin Project Assignment: ["Build a Hangman Game in Ruby"](https://www.theodinproject.com/courses/ruby-programming/lessons/file-i-o-and-serialization)
+# The Odin Project Assignment: ["Build a Tic Tac Toe Game in Ruby"](https://www.theodinproject.com/courses/ruby-programming/lessons/oop)
 
-Hangman is a paper and pencil guessing game for two or more players. One player thinks of a word, phrase or sentence and the other tries to guess it by suggesting letters or numbers, within a certain number of guesses. Please see [Wikipedia article](https://en.wikipedia.org/wiki/Hangman_(game)) for extended info.
+is a paper-and-pencil game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game. Please see [Wikipedia article](https://en.wikipedia.org/wiki/Tic-tac-toe) for extended info.
 
 ## Installation
 
-Save Hangman folder in your chosen location
+Save Tic-Tac-Toe-Game folder in your chosen location
 
 And then inside of it execute:
 
@@ -14,7 +14,7 @@ And then inside of it execute:
 
 To play the game run:
 
-    ruby Hangman-game\run_game\play.rb
+    ruby Tic-Tac-Toe-Game\run_game\play.rb
 
 ## How to Play
 
